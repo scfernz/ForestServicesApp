@@ -1,0 +1,490 @@
+  [1m[36m (108.9ms)[0m  [1mDROP DATABASE IF EXISTS "wildlife_test"[0m
+  [1m[35m (236.1ms)[0m  CREATE DATABASE "wildlife_test" ENCODING = 'unicode'
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-06-10 14:01:50 -0700
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (109.3ms)[0m  [1mDROP DATABASE IF EXISTS "wildlife_test"[0m
+  [1m[35m (242.1ms)[0m  CREATE DATABASE "wildlife_test" ENCODING = 'unicode'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-06-10 14:03:03 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1451ms (Views: 1443.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (109.2ms)[0m  [1mDROP DATABASE IF EXISTS "wildlife_test"[0m
+  [1m[35m (240.2ms)[0m  CREATE DATABASE "wildlife_test" ENCODING = 'unicode'
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-06-10 14:03:49 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 212ms (Views: 204.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (109.9ms)[0m  [1mDROP DATABASE IF EXISTS "wildlife_test"[0m
+  [1m[35m (242.5ms)[0m  CREATE DATABASE "wildlife_test" ENCODING = 'unicode'
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-06-10 14:20:52 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 223ms (Views: 215.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (109.1ms)[0m  [1mDROP DATABASE IF EXISTS "wildlife_test"[0m
+  [1m[35m (240.5ms)[0m  CREATE DATABASE "wildlife_test" ENCODING = 'unicode'
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-06-10 14:26:32 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 214ms (Views: 206.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (109.1ms)[0m  [1mDROP DATABASE IF EXISTS "wildlife_test"[0m
+  [1m[35m (313.1ms)[0m  CREATE DATABASE "wildlife_test" ENCODING = 'unicode'
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-06-10 14:27:01 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 212ms (Views: 204.9ms | ActiveRecord: 0.0ms)
+Started GET "/?species_name=Capybara" for 127.0.0.1 at 2016-06-10 14:27:02 -0700
+Processing by HomeController#input as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  Rendered home/input.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (109.2ms)[0m  [1mDROP DATABASE IF EXISTS "wildlife_test"[0m
+  [1m[35m (233.7ms)[0m  CREATE DATABASE "wildlife_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.5ms)[0m  CREATE TABLE "species" ("id" serial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160610213339')
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by AddSpeciesController#Add as HTML
+  Rendered add_species/Add.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 14:47:37 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 315ms (Views: 307.1ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 14:47:37 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  Rendered add_species/Add.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 14:48:40 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 199ms (Views: 191.8ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 14:48:41 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  Rendered add_species/Add.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 14:53:57 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 199ms (Views: 191.7ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 14:53:57 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  Rendered add_species/Add.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:01:09 -0700
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:05:12 -0700
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:05:44 -0700
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:06:47 -0700
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:07:18 -0700
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:08:45 -0700
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:13:16 -0700
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:13:16 -0700
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:15:31 -0700
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/add_species/Add" for 127.0.0.1 at 2016-06-10 15:15:31 -0700
+Processing by AddSpeciesController#Add as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:15:55 -0700
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/add_species/Add" for 127.0.0.1 at 2016-06-10 15:15:55 -0700
+Processing by AddSpeciesController#Add as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:16:05 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 198ms (Views: 190.5ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 15:16:05 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Capybara"], ["created_at", "2016-06-10 22:16:05.250279"], ["updated_at", "2016-06-10 22:16:05.250279"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered add_species/Add.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 5.0ms | ActiveRecord: 3.1ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/add_species/Add" for 127.0.0.1 at 2016-06-10 15:16:05 -0700
+Processing by AddSpeciesController#Add as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:16:50 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 199ms (Views: 191.5ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 15:16:50 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Capybara"], ["created_at", "2016-06-10 22:16:50.984904"], ["updated_at", "2016-06-10 22:16:50.984904"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered add_species/Add.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 5.1ms | ActiveRecord: 2.8ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/add_species/Add" for 127.0.0.1 at 2016-06-10 15:16:50 -0700
+Processing by AddSpeciesController#Add as HTML
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "species" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2016-06-10 22:16:50.996870"], ["updated_at", "2016-06-10 22:16:50.996870"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered add_species/Add.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:21:32 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 201ms (Views: 192.9ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 15:21:32 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Capybara"], ["created_at", "2016-06-10 22:21:32.879338"], ["updated_at", "2016-06-10 22:21:32.879338"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered add_species/Add.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 5.1ms | ActiveRecord: 2.7ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:21:32 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 15:21:32 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Capybara"], ["created_at", "2016-06-10 22:21:32.895525"], ["updated_at", "2016-06-10 22:21:32.895525"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered add_species/Add.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:34:59 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 199ms (Views: 191.2ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 15:34:59 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.7ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Capybara' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Capybara"], ["created_at", "2016-06-10 22:34:59.427675"], ["updated_at", "2016-06-10 22:34:59.427675"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered add_species/Add.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 67ms (Views: 4.9ms | ActiveRecord: 3.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:34:59 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 15:34:59 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.2ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Capybara' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Capybara"], ["created_at", "2016-06-10 22:34:59.443166"], ["updated_at", "2016-06-10 22:34:59.443166"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered add_species/Add.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:36:56 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 200ms (Views: 192.7ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 15:36:56 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.6ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Capybara' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Capybara"], ["created_at", "2016-06-10 22:36:56.469125"], ["updated_at", "2016-06-10 22:36:56.469125"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered add_species/Add.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 5.4ms | ActiveRecord: 3.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:36:56 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 15:36:56 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.3ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Capybara' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Capybara"], ["created_at", "2016-06-10 22:36:56.485517"], ["updated_at", "2016-06-10 22:36:56.485517"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered add_species/Add.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.2ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Lion' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lion"], ["created_at", "2016-06-10 22:36:56.492752"], ["updated_at", "2016-06-10 22:36:56.492752"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:38:33 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 197ms (Views: 189.6ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 15:38:33 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.6ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Capybara' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Capybara"], ["created_at", "2016-06-10 22:38:33.853625"], ["updated_at", "2016-06-10 22:38:33.853625"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered add_species/Add.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 5.0ms | ActiveRecord: 3.1ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:38:33 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 15:38:33 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.2ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Capybara' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Capybara"], ["created_at", "2016-06-10 22:38:33.869944"], ["updated_at", "2016-06-10 22:38:33.869944"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered add_species/Add.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.3ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Lion' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lion"], ["created_at", "2016-06-10 22:38:33.877443"], ["updated_at", "2016-06-10 22:38:33.877443"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.2ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Tiger' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Tiger"], ["created_at", "2016-06-10 22:38:33.880391"], ["updated_at", "2016-06-10 22:38:33.880391"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.2ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Lion' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lion"], ["created_at", "2016-06-10 22:38:33.882376"], ["updated_at", "2016-06-10 22:38:33.882376"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:40:22 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 198ms (Views: 190.2ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 15:40:22 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.6ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Capybara' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Capybara"], ["created_at", "2016-06-10 22:40:22.784629"], ["updated_at", "2016-06-10 22:40:22.784629"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered add_species/Add.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 4.8ms | ActiveRecord: 3.1ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 15:40:22 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 15:40:22 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.2ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Capybara' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Capybara"], ["created_at", "2016-06-10 22:40:22.801139"], ["updated_at", "2016-06-10 22:40:22.801139"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered add_species/Add.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.2ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Lion' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lion"], ["created_at", "2016-06-10 22:40:22.807667"], ["updated_at", "2016-06-10 22:40:22.807667"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.2ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Tiger' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Tiger"], ["created_at", "2016-06-10 22:40:22.810166"], ["updated_at", "2016-06-10 22:40:22.810166"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.2ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Tiger' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 16:08:14 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 195ms (Views: 187.7ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 16:08:14 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.7ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Capybara' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Capybara"], ["created_at", "2016-06-10 23:08:14.991806"], ["updated_at", "2016-06-10 23:08:14.991806"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered add_species/Add.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 5.0ms | ActiveRecord: 3.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 16:08:15 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 16:08:15 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.2ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Capybara' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Capybara"], ["created_at", "2016-06-10 23:08:15.007805"], ["updated_at", "2016-06-10 23:08:15.007805"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered add_species/Add.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 16:08:15 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.2ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Lion' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lion"], ["created_at", "2016-06-10 23:08:15.020646"], ["updated_at", "2016-06-10 23:08:15.020646"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.2ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Tiger' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Tiger"], ["created_at", "2016-06-10 23:08:15.023249"], ["updated_at", "2016-06-10 23:08:15.023249"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.2ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Tiger' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 16:08:34 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 195ms (Views: 187.8ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 16:08:35 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.6ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Capybara' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Capybara"], ["created_at", "2016-06-10 23:08:35.092000"], ["updated_at", "2016-06-10 23:08:35.092000"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered add_species/Add.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 4.9ms | ActiveRecord: 3.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 16:08:35 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+Started GET "/add_species/Add?species_name=Capybara" for 127.0.0.1 at 2016-06-10 16:08:35 -0700
+Processing by AddSpeciesController#Add as HTML
+  Parameters: {"species_name"=>"Capybara"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.2ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Capybara' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Capybara"], ["created_at", "2016-06-10 23:08:35.108325"], ["updated_at", "2016-06-10 23:08:35.108325"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered add_species/Add.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-10 16:08:35 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-06-10 16:08:35 -0700
+Processing by HomeController#input as HTML
+  Rendered home/input.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.2ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Lion' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lion"], ["created_at", "2016-06-10 23:08:35.143260"], ["updated_at", "2016-06-10 23:08:35.143260"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.2ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Tiger' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "species" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Tiger"], ["created_at", "2016-06-10 23:08:35.146372"], ["updated_at", "2016-06-10 23:08:35.146372"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSpecies Exists (0.3ms)[0m  SELECT  1 AS one FROM "species" WHERE "species"."name" = 'Tiger' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
